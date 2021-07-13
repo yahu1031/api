@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer' as console;
 import 'dart:io';
 import 'package:fluttermatic_api/constants.dart';
 import 'package:path/path.dart' as path;
@@ -23,7 +22,7 @@ Future<void> main() async {
   int? port = int.tryParse(portStr);
 
   if (port == null) {
-    console.log(
+    stdout.writeln(
       'Parsing Error 🤯 : Could not parse port value "$portStr" into a number.',
     );
     // 64: command line usage error
@@ -68,14 +67,12 @@ Future<void> main() async {
 }
 
 Future<void> fetchTheAssets() async {
-  stdout.writeln(path.join(path.current));
   style = await File(
     path.join(
       path.current,
       'assets/styles.css',
     ),
   ).readAsString();
-  stdout.writeln(style);
   comingAsset = await File(
     path.join(
       path.current,

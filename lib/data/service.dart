@@ -1,5 +1,5 @@
+import 'dart:io';
 import 'dart:convert';
-import 'dart:developer' as console;
 
 import 'package:fluttermatic_api/constants.dart';
 import 'package:shelf/shelf.dart' show Request, Response;
@@ -20,7 +20,9 @@ class DataService {
           },
         );
       } catch (e) {
-        console.log(e.toString());
+        stderr.writeln(
+          '[ERROR] Exception : ❌ ${e.toString()}',
+        );
         return Response.internalServerError();
       }
     });
