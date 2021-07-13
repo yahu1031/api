@@ -1,0 +1,36 @@
+{
+    "git": "https://api.github.com/repos/git-for-windows/git/releases/latest",
+    "flutter": {
+        "windows": "https://storage.googleapis.com/flutter_infra/releases/releases_windows.json",
+        "mac": "https://storage.googleapis.com/flutter_infra/releases/releases_macos.json",
+        "linux": "https://storage.googleapis.com/flutter_infra/releases/releases_linux.json"
+    },
+    "android studio": {
+        "windows": {
+            "exe": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.0.24/android-studio-ide-202.7322048-windows.exe",
+            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-windows.zip"
+        },
+        "mac": {
+            "dmg": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.0.24/android-studio-ide-202.7322048-mac.dmg",
+            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-mac.zip"
+        },
+        "linux": {
+            "TarGZ": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-linux.tar.gz"
+        }
+    },
+    "vscode": {
+        "windows": {
+            "exe": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user",
+            "zip": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive"
+        },
+        "mac": {
+            "universal": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal",
+            "intel": "https://code.visualstudio.com/sha/download?build=stable&os=darwin",
+            "silicon": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64"
+        },
+        "linux": {
+            "deb": "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64",
+            "TarGZ": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
+        }
+    }
+}

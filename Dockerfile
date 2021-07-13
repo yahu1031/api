@@ -2,19 +2,19 @@
 # https://hub.docker.com/r/google/dart
 FROM google/dart
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY pubspec.* /app/
+# COPY pubspec.* /app/
 
 RUN pub get
 
-ADD . /app/
+# ADD . /app/
 
 # Why do we need to run pub get twice?
 # Answer: https://hub.docker.com/r/google/dart#:~:text=Why%20run%20pub%20get%20twice
 RUN pub get --offline
 
-CMD ["cd", "app"]
+# CMD ["cd", "app"]
 
 ENTRYPOINT [ "/usr/bin/dart", "run", "bin/fluttermatic_api.dart" ]
 # This must listen to $PORT environment variable.
