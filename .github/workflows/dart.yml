@@ -1,0 +1,34 @@
+name: FlutterMatic API Workflow test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Workflow-Test:
+  
+    runs-on: ubuntu-latest
+    name: Analyzing workflow
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1
+      
+      - name: Adding JSON DATA
+        run: echo ${{ secrets.JSON_DATA }} | base64 --decode > assets/data.json
+      - name: echoing JSON DATA
+        run: echo ${{ secrets.JSON_DATA }} | base64 --decode
+
+      - name: Installing dependencies
+        run: dart pub get
+
+      - name: Verifying formattings
+        run: dart format --output=none --set-exit-if-changed .
+
+      - name: Analyzing project source
+        run: dart analyze
+
+      - name: Running tests
+        run: dart test

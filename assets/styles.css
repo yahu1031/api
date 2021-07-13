@@ -1,0 +1,54 @@
+body, html{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+} 
+#name{
+    color: #40C4FF;
+}
+
+.not-found-div {
+    height: 100%;
+}
+
+.coming__soon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+#coming__soon__text{
+    font-size: 5.5vw;
+}
+
+#greet{
+    font-size: 3vw;
+}
+
+::-moz-selection {
+    color: #40C4FF;
+    background: transparent;
+}
+
+::selection {
+    color: #40C4FF;
+    background: transparent;
+}
+span::-moz-selection {
+    color: #000;
+    background: transparent;
+}
+
+span::selection {
+    color: #000;
+    background: transparent;
+}
