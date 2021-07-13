@@ -68,12 +68,14 @@ Future<void> main() async {
 }
 
 Future<void> fetchTheAssets() async {
+  stdout.writeln(path.join(path.current));
   style = await File(
     path.join(
       path.current,
       'assets/styles.css',
     ),
   ).readAsString();
+  stdout.writeln(style);
   comingAsset = await File(
     path.join(
       path.current,
