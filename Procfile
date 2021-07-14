@@ -1,1 +1,1 @@
-web: dart ./bin/fluttermatic_api.dart
+web: ./dart-sdk/bin/dart ./bin/fluttermatic_api.dart
