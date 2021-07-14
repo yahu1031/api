@@ -1,9 +1,9 @@
 {
     "git": "https://api.github.com/repos/git-for-windows/git/releases/latest",
     "flutter": {
-        "windows": "https://storage.googleapis.com/flutter_infra/releases/releases_windows.json",
-        "mac": "https://storage.googleapis.com/flutter_infra/releases/releases_macos.json",
-        "linux": "https://storage.googleapis.com/flutter_infra/releases/releases_linux.json"
+        "windows": "https://storage.googleapis.com/flutter_infra_release/releases/releases_windows.json",
+        "mac": "https://storage.googleapis.com/flutter_infra_release/releases/releases_macos.json",
+        "linux": "https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json"
     },
     "android studio": {
         "windows": {
