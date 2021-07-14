@@ -112,7 +112,7 @@ Future<void> fetchTheAssets() async {
   notFoundAsset = await File(
     path.join(
       path.current,
-      'assets/404.svg',
+      'assets/404/404.svg',
     ),
   ).readAsString();
 
