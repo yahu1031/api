@@ -51,7 +51,10 @@ class GetData {
           else {
             return Response.notFound(
               renderHTML(
-                notFoundAsset!,
+                '''<div class="coming__soon">
+                  $notFoundAsset
+                <h1 id="coming__soon__text">Sorry not found</h1>
+              </div>''',
               ),
               headers: <String, Object>{
                 'Content-Type': 'text/html; charset=UTF-8',
