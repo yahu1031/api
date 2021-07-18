@@ -6,6 +6,18 @@
         "mac": "/releases_macos.json",
         "linux": "/releases_linux.json"
     },
+    "java": {
+        "JDK": {
+            "windows": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u292-b10/openlogic-openjdk-8u292-b10-windows-x64.zip",
+            "mac": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u292-b10/openlogic-openjdk-8u292-b10-mac-x64.zip",
+            "linux": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u292-b10/openlogic-openjdk-8u292-b10-linux-x64.tar.gz"
+        },
+        "JRE": {
+            "windows": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/8u292-b10/openlogic-openjdk-jre-8u292-b10-windows-x64.zip",
+            "mac": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/8u292-b10/openlogic-openjdk-jre-8u292-b10-mac-x64.zip",
+            "linux": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/8u292-b10/openlogic-openjdk-jre-8u292-b10-linux-x64.tar.gz"
+        }
+    },
     "android studio": {
         "windows": {
             "exe": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.0.24/android-studio-ide-202.7322048-windows.exe",
