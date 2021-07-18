@@ -33,5 +33,10 @@
             "deb": "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64",
             "TarGZ": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
         }
+    },
+    "path_appender":{
+        "windows" : "",
+        "mac" : "",
+        "linux" : "",
     }
 }
