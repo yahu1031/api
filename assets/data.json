@@ -34,9 +34,9 @@
             "TarGZ": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
         }
     },
-    "path_appender":{
-        "windows" : "",
-        "mac" : "",
-        "linux" : "",
+    "path_appender": {
+        "windows": "https://cdn.sourceb.in/bins/E4N0cXEOuB/0",
+        "mac": "https://cdn.sourceb.in/bins/m9OPbXRVDC/0",
+        "linux": "https://cdn.sourceb.in/bins/e8uPnsBsOH/0"
     }
 }
