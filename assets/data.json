@@ -6,6 +6,11 @@
         "mac": "/releases_macos.json",
         "linux": "/releases_linux.json"
     },
+    "adb": {
+        "windows": "https://dl.google.com/android/repository/platform-tools-latest-windows.zip",
+        "mac": "https://dl.google.com/android/repository/platform-tools-latest-darwin.zip",
+        "linux": "https://dl.google.com/android/repository/platform-tools-latest-linux.zip"
+    },
     "java": {
         "JDK": {
             "windows": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u292-b10/openlogic-openjdk-8u292-b10-windows-x64.zip",
@@ -20,15 +25,15 @@
     },
     "android studio": {
         "windows": {
-            "exe": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.0.24/android-studio-ide-202.7322048-windows.exe",
-            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-windows.zip"
+            "exe": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.2.0/android-studio-ide-202.7486908-windows.exe",
+            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-windows.zip"
         },
         "mac": {
-            "dmg": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.0.24/android-studio-ide-202.7322048-mac.dmg",
-            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-mac.zip"
+            "dmg": "https://redirector.gvt1.com/edgedl/android/studio/install/4.2.2.0/android-studio-ide-202.7486908-mac.dmg",
+            "zip": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-mac.zip"
         },
         "linux": {
-            "TarGZ": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-linux.tar.gz"
+            "TarGZ": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-linux.tar.gz"
         }
     },
     "vscode": {
