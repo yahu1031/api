@@ -1,5 +1,7 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:fluttermatic_api/constants.dart';
+import 'package:path/path.dart' as path;
 
 import 'package:fluttermatic_api/data/get_data.dart';
 import 'package:fluttermatic_api/data/service.dart';
@@ -7,6 +9,7 @@ import 'package:shelf/shelf_io.dart' as shelf_io;
 import 'package:shelf_router/shelf_router.dart' show Router;
 
 Future<void> main() async {
+  await fetchTheAssets();
 
   /// Router object
   Router app = Router();
@@ -61,4 +64,16 @@ Future<void> main() async {
       '[ERROR] Exception : ❌ ${e.toString()}',
     );
   }
+}
+
+Future<void> fetchTheAssets() async {
+  /// JSON data (endpoint data)
+  fileData = json.decode(
+    File(
+      path.join(
+        path.current,
+        'assets/data.json',
+      ),
+    ).readAsStringSync(),
+  );
 }
