@@ -6,6 +6,8 @@ import 'package:fluttermatic_api/html_body.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
+/// This class will be handling the main application response.
+/// 
 class GetData {
   Router get router {
     Router router = Router();
@@ -52,7 +54,7 @@ class GetData {
             return Response.notFound(
               renderHTML(
                 '''<div class="coming__soon">
-                <img src="$notFoundAsset" alt="not found">
+                  $notFoundAsset
                 <h1 id="coming__soon__text">Sorry not found</h1>
               </div>''',
               ),
@@ -81,11 +83,11 @@ class GetData {
         renderHTML(
           name.isEmpty
               ? '''<div class="coming__soon">
-                <img src="$comingAsset" alt="coming soon">
+                $comingAsset
                 <h1 id="coming__soon__text">We are coming soon...</h1>
               </div>'''
               : '''<div class="coming__soon">
-                <img src="${getRandomGreetChar()!}" alt="Hellow $greetName">
+                ${getRandomGreetChar()!}
                 <h1 id="greet">Hey <span id="name">$greetName</span> 👋🏻</h1>
               </div>''',
           greetName: name.isEmpty ? 'there' : greetName,

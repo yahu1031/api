@@ -67,6 +67,55 @@ Future<void> main() async {
 }
 
 Future<void> fetchTheAssets() async {
+  style = await File(
+    path.join(
+      path.current,
+      'assets/styles.css',
+    ),
+  ).readAsString();
+  comingAsset = await File(
+    path.join(
+      path.current,
+      'assets/coming.svg',
+    ),
+  ).readAsString();
+  astroSpaceAsset = await File(
+    path.join(
+      path.current,
+      'assets/greets/astro_peace.svg',
+    ),
+  ).readAsString();
+  elephantAsset = await File(
+    path.join(
+      path.current,
+      'assets/greets/elephant.svg',
+    ),
+  ).readAsString();
+  pandaAsset = await File(
+    path.join(
+      path.current,
+      'assets/greets/panda.svg',
+    ),
+  ).readAsString();
+  teddyAsset = await File(
+    path.join(
+      path.current,
+      'assets/greets/teddy.svg',
+    ),
+  ).readAsString();
+  turtleAsset = await File(
+    path.join(
+      path.current,
+      'assets/greets/turtle.svg',
+    ),
+  ).readAsString();
+  notFoundAsset = await File(
+    path.join(
+      path.current,
+      'assets/404/404.svg',
+    ),
+  ).readAsString();
+
   /// JSON data (endpoint data)
   fileData = json.decode(
     File(
