@@ -52,7 +52,7 @@ class GetData {
             return Response.notFound(
               renderHTML(
                 '''<div class="coming__soon">
-                  $notFoundAsset
+                <img src="$notFoundAsset" alt="not found">
                 <h1 id="coming__soon__text">Sorry not found</h1>
               </div>''',
               ),
@@ -81,11 +81,11 @@ class GetData {
         renderHTML(
           name.isEmpty
               ? '''<div class="coming__soon">
-                $comingAsset
+                <img src="$comingAsset" alt="coming soon">
                 <h1 id="coming__soon__text">We are coming soon...</h1>
               </div>'''
               : '''<div class="coming__soon">
-                ${getRandomGreetChar()!}
+                <img src="${getRandomGreetChar()!}" alt="Hellow $greetName">
                 <h1 id="greet">Hey <span id="name">$greetName</span> 👋🏻</h1>
               </div>''',
           greetName: name.isEmpty ? 'there' : greetName,
