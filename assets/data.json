@@ -1,4 +1,5 @@
 {
+    "debug": "https://sample-videos.com/zip/50mb.zip",
     "git": "https://api.github.com/repos/git-for-windows/git/releases/latest",
     "flutter": {
         "base_url": "https://storage.googleapis.com/flutter_infra_release/releases",
