@@ -7,7 +7,6 @@ import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 /// This class will be handling the main application response.
-/// 
 class GetData {
   Router get router {
     Router router = Router();

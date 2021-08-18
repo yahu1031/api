@@ -17,15 +17,13 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       
       - name: Adding JSON DATA
-        run: echo ${{ secrets.JSON_DATA }} | base64 --decode > assets/data.json
-      - name: echoing JSON DATA
-        run: echo ${{ secrets.JSON_DATA }} | base64 --decode
+        run: echo ${{ secrets.DATA }} | base64 --decode > assets/data.json
 
       - name: Installing dependencies
         run: dart pub get
 
       - name: Verifying formattings
-        run: dart format --output=none --set-exit-if-changed .
+        run: dart format --output=none --fix .
 
       - name: Analyzing project source
         run: dart analyze

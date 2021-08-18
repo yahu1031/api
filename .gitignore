@@ -10,3 +10,4 @@ build/
 *.lock
 Dockerfile
 heroku.yml
+data.json
