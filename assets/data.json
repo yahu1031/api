@@ -52,9 +52,20 @@
             "targz": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
         }
     },
-    "path_appender": {
-        "windows": "https://cdn.sourceb.in/bins/E4N0cXEOuB/0",
-        "macos": "https://cdn.sourceb.in/bins/m9OPbXRVDC/0",
-        "linux": "https://cdn.sourceb.in/bins/e8uPnsBsOH/0"
+    "scripts": {
+        "base_url": "https://cdn.sourceb.in/bins/",
+        "path_appender": {
+            "windows": "E4N0cXEOuB/0",
+            "macos": "m9OPbXRVDC/0",
+            "linux": "e8uPnsBsOH/0"
+        },
+        "path_refresher": {
+            "windows": {
+                "vbs": "iKemoFOkyv/0",
+                "batch": "ba4zwhqaV8/0"
+            },
+            "macos": "rog1Q6P62e/0",
+            "linux": "KArULezVMn/0"
+        }
     }
 }
