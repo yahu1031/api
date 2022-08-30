@@ -1,6 +1,6 @@
 import 'package:fluttermatic_api/constants.dart';
 
-String showHTML(String content,
+String renderHTML(String content,
         {String? greetName, String title = 'Flutter Matic'}) =>
     '''<!DOCTYPE html>
   <html lang="en">
